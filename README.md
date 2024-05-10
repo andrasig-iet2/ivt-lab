@@ -38,3 +38,10 @@ The project represents an alpha version of a spaceship.
 - There are currently two tests (`GT4500Test`), but be aware that they are not proper unit tests, as they do not isolate the dependencies of the tested class.
 
 The code can be built, but due to missing features one of the tests fails. The first execercise will be to fix this.
+
+## Test cases
+- *fireTorpedo_Single_Tries_PrimaryTS_First:* Check whether a new GT4500 tries to fire the primary store on the first try.
+- *fireTorpedo_Single_Tries_AlternatingTS:* Check whether the GT4500 tries alternating stores, when none of them is empty.
+- *fireTorpedo_Single_Tries_BothTS_If_NextTS_isEmpty:* Check whether the GT4500 tries the other store if the next one is empty.
+- *fireTorpedo_Single_Fails_If_NextTS_Fails:* Checks whether the GT4500 tries the other store if the next one fails to fire.
+- *fireTorpedo_All_Tries_AllTS_Even_If_One_Fails:* Checks whether the GT4500 tries all of the store, even if one of the store fails to fire.
